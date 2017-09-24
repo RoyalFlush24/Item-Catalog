@@ -1,35 +1,67 @@
 {% extends "base.html" %}
+
 {% block content %}
+
 {% include "nav.html" %}
+
 {% include "flash.html" %}
-<!-- Page Content -->
+
+<!-- Content of the page -->
+
 <section id="showItem" class="section">
+
+    <!-- Container of the page -->
 
     <div class="container">
 
+        <!-- page setup -->
+
         <div class="row">
+
             {% include "hobbies.html" %}
+
             <div class="col-md-9">
+
                 <h6 class="pull-right">
+
                     <a href = "{{url_for('deleteHobby', hobby_name = hobby)}}">Delete Hobby</a>
+
                 </h6>
+
                 <h6 class="padding-bottom-26">Items (<strong>{{count}}</strong>)</h6>
+
                 {% for i in items %}
+
                 <div class="thumbnail text-center">
+
                     <div class="caption-full">
+
                         <img class="img-responsive img-center" src="{{ i.picture }}" alt="{{ i.name }}">
+
                     </div>
+
                     <a href = "{{url_for('showItem', hobby_name = i.hobby.name, item_name = i.name)}}">
+
                         <h4>{{ i.name }}</h4>
+
                     </a>
+
                 </div>
+
                 {% endfor %}
+
             </div>
 
         </div>
-        <!-- /.row -->
+
+        <!-- end of page setup -->
+
     </div>
-    <!-- /.container -->
+
+    <!-- closing out our container -->
+    
 </section>
-<!-- /.section -->
+
+<!-- closing out our section -->
+
 {% endblock %}

@@ -27,8 +27,8 @@
             <div class="form-group">
                 <label for="picture">Hobby:</label>
                 <select name="hobby">
-                {% for c in hobbies %}
-                    <option value="{{c.name}}" {% if c == item.hobby %} selected {% endif %}>{{c.name}}</option>
+                {% for h in hobbies %}
+                    <option value="{{h.name}}" {% if h == item.hobby %} selected {% endif %}>{{h.name}}</option>
                 {% endfor %}
                 </select>
             </div>
