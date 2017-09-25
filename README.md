@@ -10,7 +10,7 @@ With proper code formatting we need 3 python files: lotsofitems.py, project.py, 
 
 To run the program you will need to run vagrant in Virtual Box, and python. Cloning the following repository will also be needed to successfully run the program. You can clone the repo by the following command git clone https://github.com/RoyalFlush24/Item-Catalog.
 
-Using the terminal or cmd prompt, cd, into the fullstack-nanodegree-vm file will allow you to access the vagrant file by means of cd vagrant. Now use the following command vagrant to get your vagrant cmd line up and running.  Vagrant (ssh) allows you to log into the vagrant system.
+Using the terminal or cmd prompt, cd, into the fullstack-nanodegree-vm file will allow you to access the vagrant file by means of cd vagrant. Now use the following command vagrant up to get your vagrant cmd line up and running.  Vagrant ssh allows you to log into the vagrant system.
 
 # To Run it
 
